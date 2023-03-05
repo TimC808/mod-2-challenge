@@ -10,10 +10,24 @@ body {
   header {
     padding: 25px;
     text-align: center;
-    background: black;
+    background: url(./Palau-Sunset-2021-cropped3.jpg);
+    background-size:cover;
+    position: relative;
     color: hsla(236, 95%, 49%, 0.944);
   }
 
+.header2 {
+  padding: 25px;
+  text-align: center;
+  background: black;
+  color: hsla(236, 95%, 49%, 0.944);
+}
+  /* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: grey;
+  }
+}
   h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -48,7 +62,7 @@ body {
     flex-wrap: wrap;
   }
   
-  footer {
+ footer {
     width: 100%;
     bottom: 0;
     padding: 20px;
@@ -58,17 +72,36 @@ body {
     margin-top: auto;
   }
   
+  .splashimage {
+    height: 100vh;
+    background: url(./running-race.jpg);
+    background-size: cover;
+    position: relative;
+  }
+
   .profilesection {
-    /* background-image: url(./IMG_0270.jpg);*/
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     top: 90px;
     left: 0px;
     background-position: center;
     object-position:top;
    }
-   
+  
+  #round {
+    width: 100%;
+    height: auto;
+    border: solid black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 150px;
+    flex: 0 0 100 px;
+    transform: rotate(350deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+
   .portfolio {
     background-color: #fff;
     display: flex;
@@ -76,6 +109,7 @@ body {
     justify-content: space-evenly;
     padding: 50px;
      }
+
 
   .card {
     font-size: 25px;
@@ -91,7 +125,7 @@ body {
     transition: transform .2s;
     width: 50%;
     }
-  
+    
   .card:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
@@ -100,7 +134,7 @@ body {
 
   .card img {
     text-align: center;
-    width: 200px;
+    width: 100%;
     height: auto;
   }
  
@@ -109,19 +143,40 @@ body {
     padding: 20px;
   }
   
-  .card > p {
-    text-align: center;
+  .card > .header2 {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
   }
 
+  .card > p {
+    text-align: center
+  }
+
+  .center-text {
+    text-align: center!important;
+    background-color:#f508b67d;
+    color: black;
+    background-size: cover;
+  }
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: grey;
+  }
+}
+
+@media screen and (max-width: 576px) {
   #round {
-    height: 175px;
-    width: 175px;
-    border: solid black;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 150px;
-    flex: 0 0 100 px;
-    transform: rotate(350deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+.profilesection {
+    top: 0px;
+    left:0px;
+    position:unset;
   }
