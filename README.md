@@ -16,4 +16,4 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-03/03/2023 -
+03/04/2023 - Made updates to HTML and CSS in order to position photos and improve fonts.
