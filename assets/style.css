@@ -6,6 +6,13 @@ body {
     justify-content: flex-start;
   }
   
+  header {
+    padding: 25px;
+    text-align: center;
+    background: black;
+    color: #f508b67d;
+  }
+
   h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -16,14 +23,11 @@ body {
     margin-bottom: 10px;
   }
   
-  header {
-    padding: 25px;
-    text-align: center;
-    background: black;
-    color: #f508b67d;
-  }
+  
   
   nav {
+    font-size: 20px;
+    font-style: italic;
     display: flex;
     background-color: #f508b67d;
     flex-direction: row-reverse;
@@ -55,16 +59,27 @@ body {
     margin-top: auto;
   }
   
+  .profilesection {
+    /* background-image: url(./IMG_0270.jpg);*/
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    background-position: center;
+    object-position:top;
+   }
+   
   .portfolio {
-    flex: 1;
     background-color: #fff;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-  
+     }
+
   .card {
+    font-size: 25px;
     border-style: solid;
     border-width: 1px;
     border-radius: 50px;
@@ -75,6 +90,12 @@ body {
     margin: 20px;
   }
   
+  .card img {
+    text-align: center;
+    height:min-content;
+    width:min-content;
+  }
+ 
   .card > header {
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
@@ -82,4 +103,18 @@ body {
   
   .card > p {
     text-align: center;
+  }
+
+  #round {
+    height: 175px;
+    width: 175px;
+    border: solid black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 150px;
+    padding: 10px;
+    flex: 0 0 100 px;
+    transform: rotate(350deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
   }
