@@ -13,7 +13,8 @@ body {
     background: url(./Palau-Sunset-2021-cropped3.jpg);
     background-size:cover;
     position: relative;
-    color: hsla(236, 95%, 49%, 0.944);
+    color: hsla(40, 55%, 42%, 0.944);
+    text-shadow: 2px 2px #add0de;
   }
 
 .header2 {
@@ -23,7 +24,7 @@ body {
   color: hsla(236, 95%, 49%, 0.944);
 }
   /* Tablets - header changes color */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 850px) {
   header {
     background: grey;
   }
@@ -42,12 +43,13 @@ body {
     font-size: 20px;
     font-style: italic;
     display: flex;
+    text-shadow: 2px 2px #add0de;
     background-color: #f508b67d;
     flex-direction: row-reverse;
   }
   
   nav a {
-    color: #13293d;
+    color: #0f15c6;
     padding: 14px 20px;
     text-decoration: none;
     text-align:right;
@@ -58,7 +60,6 @@ body {
   }
   
   main {
-    display: flex;
     flex-wrap: wrap;
   }
   
@@ -176,7 +177,9 @@ body {
 
 @media screen and (max-width: 576px) {
 .profilesection {
-    top: 0px;
-    left:0px;
-    position:unset;
+  margin-bottom: 50px;
+  position:fixed;
+  top: -40px;
+  left:-40px;
+    
   }
