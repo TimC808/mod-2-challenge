@@ -10,7 +10,11 @@
     <title>Tim Connelly's Portfolio</title>
   </head>
   <body>
-    <!-- Header -->
+    <!-- Header - 
+    **This is where I accomplish these requirements:
+    GIVEN I need to sample a potential employee's previous work
+    WHEN I load their portfolio
+    THEN I am presented with the developer's name, a recent photo or avatar and links to sections about them, their work, and how to contact them -->
     <header>
       <!-- <section class="splashimage"></section> -->
       <h1 style="font-size: 3.5vw" ;>Welcome to the portfolio page of:</h1>
@@ -20,7 +24,9 @@
       </p>
     </header>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar - This is where I accomplish these requirements:
+    WHEN I click one of the links in the navigation
+    THEN the UI scrolls to the corresponding section -->
     <nav style="font-size: 2vw">
       <a href="#faq">FAQ</a>
       <a href="#contactme">How to Contact Me</a>
@@ -38,6 +44,16 @@
       </section>
     </nav>
 
+    <!-- Navigation Bar - 
+    **This is where I accomplish these requirements:
+    WHEN I click on the link to the section about their work
+    THEN the UI scrolls to a section with titled images of the developer's applications 
+    WHEN I am presented with the developer's first application
+    THEN that application's image should be larger in size than the others 
+    WHEN I click on the images of the applications
+    THEN I am taken to that deployed application (I do not yet have any deployed applications)
+    WHEN I resize the page or view the site on various screens and devices
+    THEN I am presented with a responsive layout that adapts to my viewport -->
     <main>
       <h3 class="center-text">My Work</h3>
       <p id="mywork"></p>
@@ -46,7 +62,7 @@
       <div class="portfolio">
         <section class="card">
           <section class="header2" style="font-size: 2.5vw">
-            Running Calendar
+            <a href="./runcal.html" target="_blank"> Running Calendar </a>
           </section>
           <img src="./assets/running-race.jpg" alt="runners in a race" />
           <p style="font-size: 2.5vw">
@@ -56,20 +72,20 @@
 
         <section class="card">
           <section class="header2" style="font-size: 2.5vw">
-            Pace Calculator
+            <a href="./pacecalc.html" target="_blank">Pace Calculator</a>
           </section>
           <img
             src="./assets/calculator-168360-340.jpg"
             alt="calculator image"
           />
           <p style="font-size: 2.5vw">
-            Figure out your target pace for your next swim, ride or run!
+            Find your target pace for your swim, ride or run!
           </p>
         </section>
 
         <section class="card">
           <section class="header2" style="font-size: 2.5vw">
-            Coaches Corner
+            <a href="./coachcornr.html" target="_blank">Coaches Corner</a>
           </section>
           <img
             src="./assets/running coach-612x612.jpg"
@@ -82,7 +98,7 @@
 
         <section class="card">
           <section class="header2" style="font-size: 2.5vw">
-            All Things Triathlon
+            <a href="./all-tri.html" target="_blank">All Things Triathlon</a>
           </section>
           <img
             src="./assets/triathlon-swim-81884-340.jpg"
@@ -136,7 +152,7 @@
         </p>
         <a href="#top">Top</a>
 
-        <h3 class="center-text">Things People Ask Me</h3>
+        <h3 class="center-text">Things People Ask Me (aka FAQ)</h3>
 
         <p id="faq">
           Q: Where are you from?
