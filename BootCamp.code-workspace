@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../../.."
+	},
+	{
+		"name": "UCF-VIRT-FSF-PT-02-2023-U-LOLC",
+		"path": "../../module-3/UCF-VIRT-FSF-PT-02-2023-U-LOLC"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "BootCamp"
+  }
+}
